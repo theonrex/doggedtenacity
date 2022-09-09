@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 // import post from "../../solablog/schemas/post";
 import imageUrlBuilder from "@sanity/image-url";
 import BlogAuthor from "./BlogAuthor";
-
+import Popular from "./popular";
 function Blogpost() {
 	const builder = imageUrlBuilder(sanityClient);
 
@@ -20,6 +20,7 @@ function Blogpost() {
 			.fetch(
 				`*[_type == "post"]{
             title,
+			subTitle,
             slug,
 			publishedAt,
             mainImage{
@@ -51,6 +52,7 @@ function Blogpost() {
 					never giving up on your goals no matter what happens around you.
 				</p>
 				<div className="">
+					<Popular/>
 					<div className="postData rowx">
 						{postData &&
 							postData.map((post, index) => (
@@ -71,6 +73,9 @@ function Blogpost() {
 												<span>
 													<h3 className="post-Title"> {post.title} </h3>
 												</span>
+												<p className="post_subtitle">
+													{post.subTitle} <span>read more.....</span>{" "}
+												</p>
 												<div>
 													<div>
 														<BlogAuthor />

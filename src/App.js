@@ -14,6 +14,9 @@ import BlogProjects from "./components/BlogProjects"
 import BlogSinglePost from "./components/BlogsinglePost"
 import Contact from './components/contact';
 import MailChimp from './components/Mail/mailchimp';
+// popular post
+import PopularCurrent from './components/PopularCurrent';
+import Popular from './components/popular';
 
 
 
@@ -34,6 +37,8 @@ function App() {
             <Route exact path='/projects'  element={<BlogProjects />} />
             <Route exact path='/Contact'  element={<Contact />} />
             <Route exact path='/mailChimp'  element={<MailChimp />} />
+        <Route exact path='/posts/:id'  element={<PopularCurrent />} />
+        <Route exact path='/posts'  element={<Popular />} />
 
 
     </Routes>

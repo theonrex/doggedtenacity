@@ -27,20 +27,6 @@
 .dark__mode header  {
             color: white !important;
 }
-.dark__mode .offcanvas-header
-{
-background-color: #1d082c !important;
-    background-image:
-        radial-gradient(at 47% 33%, hsl(268.57, 100%, 8%) 0, transparent 59%),
-        radial-gradient(at 82% 65%, hsl(268.57, 100%, 8%) 0, transparent 55%) !important;
-    color: white !important;
-
-}
-.dark__mode .offcanvas-end,
-.offcanvas-header {
-  
-   border: none;
-}
 
 .dark__mode footer{
     background-color: #120223;
@@ -72,7 +58,6 @@ background-color: #1d082c !important;
     border: 1px solid rgba(255, 255, 255, 0.1803921569);
 }
 .dark__mode .navbar-light .navbar-toggler-icon {
-
 opacity: 1;
 }
 
@@ -87,8 +72,7 @@ opacity: 1;
 
 }
 .dark__mode .btn-close {
-    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/delete-sign.png);
-    /* background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z' clip-rule='evenodd'/></svg>");    background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z' clip-rule='evenodd'/></svg>"); */
+    background-image: url("https://img.icons8.com/metro/500/000000/cancel.png");    /* background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z' clip-rule='evenodd'/></svg>");    background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z' clip-rule='evenodd'/></svg>"); */
     /* <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" /></svg> */
         /* background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z' clip-rule='evenodd'/></svg>") !important; */
         background-repeat: no-repeat;
@@ -97,13 +81,26 @@ opacity: 1;
 .dark__mode .offcanvas-header .btn-close{
      background-color: white !important;   
 }
+ .offcanvas-header .btn-close:focus,
+ .offcanvas-header .btn-close:hover,
+ .offcanvas-header .btn-close:active,
+ .offcanvas-header .btn-close::selection{
+    border: none !important;
+    box-shadow: none !important;
+        color: #ffffff00 !important;
+        border-color: transparent !important;
+    
+}
 
  .btn-close {
-    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/delete-sign.png);
+    background-image: url("https://img.icons8.com/metro/500/000000/cancel.png");
+    opacity: 1;
+    background-size: 1.4em;
     /* background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z' clip-rule='evenodd'/></svg>");    background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z' clip-rule='evenodd'/></svg>"); */
     /* <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" /></svg> */
     /* background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z' clip-rule='evenodd'/></svg>") !important; */
     background-repeat: no-repeat;
+
     background-color: white !important;
 }
 
@@ -126,11 +123,10 @@ svg{
 
 .dark__mode .navbar-light .navbar-toggler {
     color: transparent !important;
+    filter: invert(1);
     border-color: transparent !important;
 }
-.dark__mode .navbar-light .navbar-toggler-icon {
-filter: invert(1);
-}
+
 .dark__mode .active {
     color: #6b02e2 !important;
 }
@@ -172,6 +168,21 @@ input::selection {
 .dark__mode .contact label{
     color: white !important;
 }
+
+.dark__mode input {
+    display: block;
+    box-sizing: border-box;
+    width: 80%;
+    border-width: 0 0 1px 0 !important;
+    border-radius: 0;
+    border: solid #560bad;
+    padding: 1em 0 !important;
+    margin:1em 0 !important;
+    margin-bottom: 10px;
+    font-size: 14px;
+    background-color: transparent;
+}
+
 .dark__mode  .contact input:focus,
 .dark__mode  .contact input:hover,
 .dark__mode  .contact input:active,
@@ -196,4 +207,35 @@ input::selection {
 
     outline: none;
 
+}
+
+@media screen and (max-width:1204px) {
+    
+    .dark__mode .offcanvas-header {
+            background-color: #1d082c !important;
+            background-image:
+                radial-gradient(at 47% 33%, hsl(268.57, 100%, 8%) 0, transparent 59%),
+                radial-gradient(at 82% 65%, hsl(268.57, 100%, 8%) 0, transparent 55%) !important;
+            color: white !important;
+    
+        }
+    
+        .dark__mode .offcanvas,
+        .dark__mode .offcanvas-body {
+            color: white !important;
+          
+            background-color: #1d082c !important;
+            background-image:
+                radial-gradient(at 47% 33%, hsl(268.57, 100%, 8%) 0, transparent 59%),
+                radial-gradient(at 82% 65%, hsl(268.57, 100%, 8%) 0, transparent 55%) !important;
+            color: white !important;
+            outline: 0;
+            transition: transform .3s ease-in-out;
+        }
+    
+        .dark__mode .offcanvas-end,
+        .offcanvas-header {
+    
+            border: none;
+        }
 }

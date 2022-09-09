@@ -17,6 +17,15 @@ export default {
         maxLength: 96,
       },
     },
+     {
+      name: 'subTitle',
+      title: 'Sub-Title',
+      type: 'string',
+ validation: Rule => [
+    Rule.required().min(120).error('A Sub Title of min. 20 characters is required'),
+    Rule.max(160).warning('Shorter Sub Titles are usually better')
+  ]
+    },
     {
       name: 'author',
       title: 'Author',

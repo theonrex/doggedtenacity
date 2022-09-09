@@ -4,17 +4,17 @@ import { useParams } from "react-router-dom";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 
-	const builder = imageUrlBuilder(sanityClient);
+const builder = imageUrlBuilder(sanityClient);
 
-	function urlFor(source) {
-		return builder.image(source);
-	}
+function urlFor(source) {
+	return builder.image(source);
+}
 function BlogsinglePost() {
-const [singlePost, setSinglePost] = useState(null);
-const {slug} = useParams();
+	const [singlePost, setSinglePost] = useState(null);
+	const { slug } = useParams();
 
-useEffect(() =>{
-    sanityClient
+	useEffect(() => {
+		sanityClient
 			.fetch(
 				`*[slug.current == "${slug}"]{
            title,
@@ -33,9 +33,9 @@ useEffect(() =>{
     }`
 			)
 			.then((data) => setSinglePost(data[0]));
-},[])
+	}, []);
 
-if (!singlePost) return <div>Loading....</div>
+	if (!singlePost) return <div className="loading">Loading....</div>;
 
 	return (
 		<div className="container">
@@ -53,7 +53,6 @@ if (!singlePost) return <div>Loading....</div>
 					{singlePost.name} <br /> <span>{singlePost.bio}</span>{" "}
 				</header>
 			</section>
-
 			<article className="singlePost-body">
 				<BlockContent
 					blocks={singlePost.body}
