@@ -50,21 +50,21 @@ function App() {
 			<div
 				data-aos="fade-up"
 				data-aos-anchor-placement="center-center"
-				data-aos-duration="3000"
+				data-aos-duration="1000"
 			>
 				<Popular />
 			</div>
 			<div
 				className="explore_bg"
 				data-aos-anchor-placement="top-center"
-				data-aos-duration="3000"
+				data-aos-duration="1000"
 			>
 				<Explore />
 			</div>
 			<div
 				data-aos="fade-down"
 				data-aos-easing="linear"
-				data-aos-duration="1500"
+				data-aos-duration="500"
 			>
 				<Gallery />
 			</div>
