@@ -21,10 +21,10 @@ function Contact() {
 
 		emailjs
 			.sendForm(
-				"service_v84q8ig",
-				"template_c4akkls",
+				process.env.REACT_APP_SERVICE,
+				process.env.REACT_APP_TEMPLATE,
 				form.current,
-				"jrSidcm3VFov762B4"
+				process.env.REACT_APP_EMAILJS
 			)
 			.then(
 				(response) => {
@@ -55,20 +55,20 @@ function Contact() {
 	// 		);
 	// };
 
-	   useEffect(() => {
-				if (status === "SUCCESS") {
-					setTimeout(() => {
-						setStatus("");
-					}, 3000);
-				}
-			}, [status]);
+	useEffect(() => {
+		if (status === "SUCCESS") {
+			setTimeout(() => {
+				setStatus("");
+			}, 3000);
+		}
+	}, [status]);
 
-			 const handleChange = (e) => {
-					setValues((values) => ({
-						...values,
-						[e.target.name]: e.target.value,
-					}));
-				};
+	const handleChange = (e) => {
+		setValues((values) => ({
+			...values,
+			[e.target.name]: e.target.value,
+		}));
+	};
 
 	// const [message, setMessage] = useState("");
 	// const [error, setError] = useState(null);
@@ -92,9 +92,9 @@ function Contact() {
 			<div className="rowx container contact_mg">
 				<section
 					className="col50 icons-social"
-					data-aos="fade-right"
-					data-aos-offset="300"
-					data-aos-easing="ease-in-sine"
+					data-aos="fade-down"
+					data-aos-easing="linear"
+					data-aos-duration="1500"
 				>
 					<h1>
 						Contact Us <br />
@@ -102,18 +102,24 @@ function Contact() {
 					<h1 className="usflex">
 						<span className="contact-line"> </span>
 					</h1>
-					<a href="/#" className="">
-						<i className="fab fa-facebook-f"> FaceBook</i>
+					<a
+						href="https://www.instagram.com/just_sam_wonders?r=nametag"
+						className=""
+					>
+						<i className="fab fa-instagram">just_sam_wonders </i>
 					</a>
-					<a href="/#" className="">
-						<i className="fab fa-google"> Gmail</i>
+					<a
+						href="https://twitter.com/just_samwonders?t=2q9YJeomC7Sv_-6KTxaZ8Q&s=08"
+						className=""
+					>
+						<i className="fab fa-twitter">just_samwonders</i>
 					</a>
-					<a href="/#" className="">
-						<i class="fa-solid fa-phone"> +2347063528046</i>{" "}
+					<a
+						href="mailto:tenacitydogged@gmail.com?subject=subject&cc=cc@example.com"
+						className=""
+					>
+						<i class="fab fa-google"> Gmail </i>{" "}
 					</a>{" "}
-					<a href="/#" className="">
-						<i class="fa-brands fa-whatsapp"> +2347063528046</i>{" "}
-					</a>
 				</section>
 				<section
 					className="col50 contact"
@@ -160,12 +166,11 @@ function Contact() {
 			</div>
 		</div>
 	);
-	
 }
 
 const renderAlert = () => (
-  <div className="px-4 py-3 leading-normal text-blue-700 bg-blue-100 rounded mb-5 text-center">
-    <p>your message submitted successfully</p>
-  </div>
-)
+	<div className="px-4 py-3 leading-normal text-blue-700 bg-blue-100 rounded mb-5 text-center">
+		<p>your message submitted successfully</p>
+	</div>
+);
 export default Contact;

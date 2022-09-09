@@ -7,8 +7,7 @@ import "./styles/form.css";
 
 const CustomForm = ({ status, message, onValidated }) => {
 
-    	const url =
-				"https://gmail.us18.list-manage.com/subscribe/post?u=e9ce3401f062aa032357227a9&id=f2eef6e434";
+    	const url ="https://gmail.us18.list-manage.com/subscribe/post?u=e9ce3401f062aa032357227a9&id=f2eef6e434";
 
 
          const {

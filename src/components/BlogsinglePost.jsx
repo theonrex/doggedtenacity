@@ -40,9 +40,7 @@ function BlogsinglePost() {
 	return (
 		<div
 			className="container"
-			data-aos="fade-down"
-			data-aos-easing="linear"
-			data-aos-duration="1500"
+			
 		>
 			<header className="singlePost-title"> {singlePost.title} </header>
 			<div className="singlePost-img">
