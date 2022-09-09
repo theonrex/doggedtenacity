@@ -42,7 +42,24 @@
   padding: 0 !important;
   margin: 0 !important;
 }
-
+ .mc__field-container input {
+   display: block;
+   box-sizing: border-box;
+   width: 80%;
+   border-width: 0 0 1px 0 !important;
+   border-radius: 0;
+   border: solid #560bad !important;
+   padding: 1em 0 !important;
+   margin: 1em 0 !important;
+   margin-bottom: 10px;
+   font-size: 14px;
+   background-color: transparent !important;
+ }
+.mc__form input[type="submit"] {
+  transition: 0.3s all;
+  background-color: #560bad !important;
+  color: white;
+}
 .contact input {
   display: block;
   box-sizing: border-box;
@@ -149,6 +166,7 @@ button[type="submit"]:active,
   transform: translateY(3px);
   border: 1px solid transparent;
   opacity: 0.8;
+  background-color: #560bad;
 }
 
 input:disabled {
@@ -159,11 +177,6 @@ input[type="button"]:hover {
   transition: 0.3s all;
 }
 
-button[type="submit"],
-input[type="button"],
-input[type="submit"] {
-  -webkit-appearance: none;
-}
 .Subscribe h1,
 .newsletter h1{
   color: #560bad;
