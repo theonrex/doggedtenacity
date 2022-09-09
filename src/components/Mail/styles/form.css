@@ -1,0 +1,317 @@
+
+.mail img{
+  width: 80%;
+}
+
+
+.Subscribe h1{
+  margin-top: 2em;
+  font-size: 3em;
+}
+.Subscribe p{
+  width: 70%;
+  font-size: 1em;
+}
+
+.sending{
+  color: blue;
+}
+.error{
+  color: #bf1650;
+}
+.success{
+  color: green;
+}
+
+.form {
+  background: #0e101c;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.error {
+  color: #bf1650;
+}
+
+/* .error::before {
+  display: inline;
+  content: "⚠ ";
+} */
+
+ ::placeholder {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.contact input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 0 0 1px 0 !important;
+    border-radius: 0;
+  border: solid #560bad;
+  padding: 0 !important;
+    margin: 0 !important;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+
+.contact label {
+  line-height: 2;
+  text-align: left;
+  display: block;
+  font-size: 1em;
+  margin-bottom: 13px;
+  margin-top: 20px;
+  color: #560bad;  font-size: 14px;
+  font-weight: 200;
+}
+
+label {
+}
+
+
+/* button{
+  background: #ec5990;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 10px;
+} */
+
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+  background: #560bad;
+}
+
+input[type="submit"] {
+  background: #560bad;
+  color: rgb(255, 255, 255);
+  width: 80%;
+
+      padding: 0.4em 1em !important;
+      font-size: 1.6em;
+      text-align: center;
+  
+    
+}
+input{
+  width: 70%;
+  padding: 0.7em;
+}
+ input:focus,
+ input:hover,
+ input:active,
+ input::selection {
+  color: rgb(0, 0, 0);
+  border: solid #560bad !important;
+  border-width: 0 0 3px 0 !important;
+  padding-bottom: 2px;
+
+  outline: none;
+
+}
+.contact input:focus,
+.contact input:hover,
+.contact input:active,
+.contact input::selection {
+  color: rgb(0, 0, 0);
+  border: solid #560bad !important;
+  border-width: 0 0 3px 0 !important;
+  padding-bottom: 2px;
+
+  outline: none;
+
+}
+textarea:focus,
+textarea:hover,
+textarea:active,
+textarea::selection {
+  color: black !important;
+  border: solid #560bad !important;
+  border-width: 0 0 3px 0 !important;
+  padding-bottom: 2px;
+
+  outline: none;
+
+}
+
+
+button[type="submit"]:active,
+.contactinput[type="button"]:active,
+.contactinput[type="submit"]:active {
+  transition: 0.3s all;
+  transform: translateY(3px);
+  border: 1px solid transparent;
+  opacity: 0.8;
+}
+
+input:disabled {
+  opacity: 0.4;
+}
+
+input[type="button"]:hover {
+  transition: 0.3s all;
+}
+
+button[type="submit"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+}
+.Subscribe h1,
+.newsletter h1{
+  color: #560bad;
+}
+
+.sub_width {
+        border-radius: 1em;
+        padding: 1em;
+        margin-top: 5em;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: -12em;
+        /* // background-color: #fffffffb !important; */
+  width: 80%;
+  background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(17.5px);
+    -webkit-backdrop-filter: blur(17.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+textarea {
+  margin-bottom: 2em !important;
+  
+  width: 100%;
+  border:  solid #560bad;
+    border-width: 0 0 1px 0 !important;
+}
+
+button {
+  display: block;
+  appearance: none;
+  margin-top: 40px;
+  border: 1px solid #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+     .absolute_btn {
+       margin: 0;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+    
+     }
+  
+     .newsletter_btn {
+       position: relative;
+  
+     }
+@media screen and (max-width:1113px) {
+.NewsLettersubcribe{
+  padding: 2em;
+}
+.sub_width{
+    margin-top: 5em;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: -15em;
+  width: 90%;
+  padding: 3.5em 0;
+}
+
+  .mail img{
+    margin: 1em auto -6em auto;
+  }
+
+    .Subscribe h1 {
+      margin-top: 2em;
+      font-size: 2.6em;
+    }
+    .newsletter_text{
+      text-align: center;
+      width: 100%;
+    }
+        .newsletter {
+        
+          width: 8em;
+          height: 2.6em;
+          margin-right: auto;
+          margin-left: auto;
+          text-align: center;
+          position: relative;
+        
+        }
+        .absolute_btn{
+                      margin: 0;
+            position: absolute;
+                  top: 50%;
+                    left: 50%;
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+        }
+        
+        .newsletter_btn{
+              position: relative;
+              width: 100%;
+        
+        }
+
+  
+}
+
+@media screen and (max-width:449px) {
+  .NewsLettersubcribe {
+    padding: 1em;
+  }
+
+  .newsletter_text {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .newsletter_text h2 {
+    font-size: 1.5em;
+  }
+
+  .newsletter_text p {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width:385px) {
+  .Subscribe h1{
+    padding-top: 1em;
+    font-size: 1.6em;
+  }
+    .Subscribe p {
+      width: 100%;
+      font-size: 1em;
+    }
+  .NewsLettersubcribe {
+    padding: 1em;
+  }
+
+  .newsletter_text {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .newsletter_text h2 {
+    font-size: 1.2em;
+    
+  }
+
+  .newsletter_text p {
+    font-size: 0.9em;
+  }
+}
