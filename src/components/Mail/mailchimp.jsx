@@ -10,7 +10,12 @@ function MailChimp() {
 				<section className="col50 mail">
 					<img src={Mail} alt="" />
 				</section>
-				<section className="col50 Subscribe">
+				<section
+					className="col50 Subscribe "
+					data-aos="fade-right"
+					data-aos-offset="300"
+					data-aos-easing="ease-in-sine"
+				>
 					<div>
 						{" "}
 						<h1>Subscribe to our newsletter</h1>

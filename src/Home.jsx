@@ -48,9 +48,7 @@ function App() {
 			</div>
 			<header className="popular">Popular Post</header>
 			<div
-				data-aos="fade-up"
-				data-aos-anchor-placement="center-center"
-				data-aos-duration="1000"
+			
 			>
 				<Popular />
 			</div>
