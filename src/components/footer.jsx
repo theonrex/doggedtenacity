@@ -77,22 +77,7 @@ function App() {
 								</div>
 							</div>
 						</section>
-						{/* Section: Text  */}
-						<section className="text-center mb-5">
-							<a href="/#" className="text-white me-4">
-								<i className="fab fa-facebook-f"></i>
-							</a>
-							<a href="/#" className="text-white me-4">
-								<i className="fab fa-google"></i>
-							</a>
-							<a href="/#" className="text-white me-4">
-								<i className="fa-solid fa-phone"></i>{" "}
-							</a>{" "}
-							<a href="/#" className="text-white me-4">
-								<i className="fa-brands fa-whatsapp"></i>{" "}
-							</a>
-						</section>
-						{/* Section: Social  */}
+				
 					</div>
 					{/* Grid container  */}
 					<div className="text-center p-3">
