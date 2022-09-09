@@ -20,7 +20,7 @@ function BlogProjects() {
         .then((data) => setProject(data));
     }, [])
 	return (
-		<div>
+		<div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
 			{project &&
 				project.map((projectP, index) => (
 					<div>

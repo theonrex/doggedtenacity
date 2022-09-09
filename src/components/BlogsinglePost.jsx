@@ -38,7 +38,12 @@ function BlogsinglePost() {
 	if (!singlePost) return <div className="loading">Loading....</div>;
 
 	return (
-		<div className="container">
+		<div
+			className="container"
+			data-aos="fade-down"
+			data-aos-easing="linear"
+			data-aos-duration="1500"
+		>
 			<header className="singlePost-title"> {singlePost.title} </header>
 			<div className="singlePost-img">
 				<img src={urlFor(singlePost.mainImage).width(200).url()} alt="" />{" "}

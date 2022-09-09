@@ -90,7 +90,12 @@ function Contact() {
 		<div>
 			{/* <BlogNewsLetter/> */}
 			<div className="rowx container contact_mg">
-				<section className="col50 icons-social">
+				<section
+					className="col50 icons-social"
+					data-aos="fade-right"
+					data-aos-offset="300"
+					data-aos-easing="ease-in-sine"
+				>
 					<h1>
 						Contact Us <br />
 					</h1>
@@ -110,7 +115,12 @@ function Contact() {
 						<i class="fa-brands fa-whatsapp"> +2347063528046</i>{" "}
 					</a>
 				</section>
-				<section className="col50 contact">
+				<section
+					className="col50 contact"
+					data-aos="fade-down"
+					data-aos-easing="linear"
+					data-aos-duration="1500"
+				>
 					<header>Get in Touch</header>
 					<p></p>
 					{status && renderAlert()}

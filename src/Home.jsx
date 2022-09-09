@@ -19,7 +19,7 @@ import Gallery from "./components/Gallery";
 
 function App() {
 	return (
-		<div className="container">
+		<div className="container" data-aos="fade-up" data-aos-duration="3000">
 			{/* <MyCrud /> */}
 
 			<div className="rowx landing-page">
@@ -47,12 +47,25 @@ function App() {
 				</div>
 			</div>
 			<header className="popular">Popular Post</header>
-
-			<Popular />
-			<div>
+			<div
+				data-aos="fade-up"
+				data-aos-anchor-placement="center-center"
+				data-aos-duration="3000"
+			>
+				<Popular />
+			</div>
+			<div
+				className="explore_bg"
+				data-aos-anchor-placement="top-center"
+				data-aos-duration="3000"
+			>
 				<Explore />
 			</div>
-			<div>
+			<div
+				data-aos="fade-down"
+				data-aos-easing="linear"
+				data-aos-duration="1500"
+			>
 				<Gallery />
 			</div>
 		</div>

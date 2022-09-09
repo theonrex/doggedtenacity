@@ -6,13 +6,26 @@ export default function BlogAbout() {
 		<div>
 			<section className="container">
 				<div className="rowx about">
-					<section className="about-img col40">
+					<section
+						className="about-img col40"
+						data-aos="fade-right"
+						data-aos-offset="300"
+						data-aos-easing="ease-in-sine"
+						data-aos-duration="2000"
+					>
 						{" "}
 						<img src={Image} alt="" srcset="" />{" "}
 					</section>
 					<section className="col60">
-						<header className=" about-header"> About Me </header>
-						<p className="about_p">
+						<header
+							className=" about-header"
+							data-aos="zoom-in"
+							data-aos-duration="2000"
+						>
+							{" "}
+							About Me{" "}
+						</header>
+						<p className="about_p" data-aos="fade-up" data-aos-duration="3000">
 							Kayode Samuel Olakunle "Samwonders" is a business enthusiast who
 							is keen on leading a balanced life with the pursuit of Finance,
 							Faith, Family, Fitness and Freedom. He holds a B.Agric in

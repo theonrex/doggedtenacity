@@ -14,6 +14,9 @@ let naviagte = useNavigate();
 				{Data.map((data, key) => {
 					return (
 						<div
+							data-aos="fade-down"
+							data-aos-easing="linear"
+							data-aos-duration="1500"
 							className="post-mg"
 							onClick={() => naviagte(`/posts/${data.id}`)}
 						>
@@ -42,10 +45,7 @@ let naviagte = useNavigate();
 												</div>
 											</div>
 											{/* <p> {post.publishedAt} </p> */}
-											<p className="date">
-												Published at :{" "}
-												{data.publishedAt}
-											</p>
+											<p className="date">Published at : {data.publishedAt}</p>
 										</div>{" "}
 									</div>
 								</span>

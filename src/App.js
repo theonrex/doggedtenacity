@@ -18,7 +18,10 @@ import MailChimp from './components/Mail/mailchimp';
 import PopularCurrent from './components/PopularCurrent';
 import Popular from './components/popular';
 
-
+//aos
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 function App() {
   return (

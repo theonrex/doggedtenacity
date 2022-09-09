@@ -42,11 +42,11 @@
 }
 .dark__mode .newsletter a {
     margin: auto;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255) !important;
     text-transform: capitalize;
 }
 .dark__mode .icons-social a {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255) !important;
 }
 
 .dark__mode .contact {
@@ -118,6 +118,9 @@ svg{
 }
 .dark__mode .navbar-brand {
    color: white !important;
+}
+.dark__mode .post_subtitle:hover{
+    color: white !important;
 }
 
 .dark__mode .navbar-light .navbar-brand {

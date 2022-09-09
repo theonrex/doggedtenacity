@@ -2,7 +2,12 @@ import React from 'react'
 
 function NewsLettersubcribe() {
   return (
-		<div className=" NewsLettersubcribe container">
+		<div
+			className=" NewsLettersubcribe container"
+			data-aos="fade-up"
+			data-aos-anchor-placement="center-bottom"
+			data-aos-duration="2000"
+		>
 			<div className="rowx sub_width">
 				<section className="col50 newsletter_text">
 					<h2> Don't miss the new updates</h2>

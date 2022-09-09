@@ -52,7 +52,7 @@ function Blogpost() {
 					never giving up on your goals no matter what happens around you.
 				</p>
 				<div className="">
-					<Popular/>
+					<Popular />
 					<div className="postData rowx">
 						{postData &&
 							postData.map((post, index) => (
@@ -63,7 +63,12 @@ function Blogpost() {
 										to={"/post/" + post.slug.current}
 										key={post.slug.current}
 									>
-										<span className="mainImage">
+										<span
+											className="mainImage"
+											data-aos="fade-down"
+											data-aos-easing="linear"
+											data-aos-duration="1500"
+										>
 											{/* src={urlFor(food.foodImage).width(200).url()} */}
 											<img
 												src={urlFor(post.mainImage).width(200).url()}
