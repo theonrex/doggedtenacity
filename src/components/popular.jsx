@@ -27,7 +27,7 @@ let naviagte = useNavigate();
 											<h3 className="post-Title"> {data.title} </h3>
 										</span>
 										<p className="post_subtitle">
-											{data.description} <span>read more.....</span>{" "}
+											{data.subTitle} <span>read more.....</span>{" "}
 										</p>
 										<div>
 											<div>
