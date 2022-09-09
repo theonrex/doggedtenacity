@@ -93,7 +93,7 @@ opacity: 1;
 }
 
  .btn-close {
-    background-image: url("https://img.icons8.com/metro/500/000000/cancel.png");
+    background-image: url("https://img.icons8.com/metro/500/000000/cancel.png") !important;
     opacity: 1;
     background-size: 1.4em;
     /* background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z' clip-rule='evenodd'/></svg>");    background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z' clip-rule='evenodd'/></svg>"); */
@@ -115,6 +115,9 @@ opacity: 1;
 svg{
     width: 2em;
     height: 2em;
+}
+.dark__mode .navbar-brand {
+   color: white !important;
 }
 
 .dark__mode .navbar-light .navbar-brand {

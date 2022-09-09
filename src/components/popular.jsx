@@ -10,7 +10,6 @@ const [localProjects, setLocalProjects] = useState(null);
 let naviagte = useNavigate();
 	return (
 		<div>
-			<header className="popular">Popular Post</header>
 			<div className="postData  rowx">
 				{Data.map((data, key) => {
 					return (
@@ -45,7 +44,7 @@ let naviagte = useNavigate();
 											{/* <p> {post.publishedAt} </p> */}
 											<p className="date">
 												Published at :{" "}
-												{new Date(data.publishedAt).toLocaleDateString()}
+												{data.publishedAt}
 											</p>
 										</div>{" "}
 									</div>

@@ -1,9 +1,8 @@
 
 //import fonts
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 //declared
-$Cabin: 'Cabin',sans-serif;
+$Cabin: 'Titillium Web'  ,sans-serif;
 $lightblue : #8519ff;
 $darkblue: #560bad;
 
@@ -18,7 +17,10 @@ p {
     margin-top: 0;
     margin-bottom: 1rem;
 }
-      
+          a {
+              color: black !important;
+              text-decoration: underline;
+          }
 
 
 body{
@@ -127,7 +129,10 @@ background: #560bad;
     border-color: rgba(255, 255, 255, 0.69) !important ;
 }
 
-
+.navbar-brand {
+  font-weight: 700;
+  font-family: $Cabin;
+}
 
 // .navbar-bg,
 // .Navbar {
@@ -173,6 +178,7 @@ background: #560bad;
 .Treading{
     font-family: $Cabin;
     font-size: 4em;
+    font-weight: 900;
     background: #560bad;
         background: linear-gradient(to right, #8519ff 22%, #560bad 74%);
         -webkit-background-clip: text;
@@ -250,6 +256,12 @@ background: #560bad;
 }
 
 //popular
+.post_subtitle{
+    color: #000000;
+}
+.post_subtitle:hover{ 
+    color: #000000 !important;
+}
 .singlePost-img,
 .popuplar_current_img {
     width: 50% !important;
@@ -534,6 +546,7 @@ footer{
 
 //blogAbout
 .blog h1{
+    font-weight: 900;
     padding-top: 84px;
     width: 80%;
     font-size: 3em;
@@ -584,6 +597,7 @@ footer{
 }
 
 .post-Title{
+    font-weight: 700;
     text-decoration: underline ;
     padding-top: 7px;
     background: #560bad;
@@ -595,6 +609,9 @@ footer{
 }
 .post_subtitle span{
     color: #7700ff !important;
+}
+.post_subtitle{
+    padding-bottom: 1em;
 }
 a {
     text-decoration: none !important;
@@ -904,6 +921,7 @@ color: black;
 .icons-social a{
 padding: 25px 0;
     display: block;
+    letter-spacing: 0.2em;
 }
 .icons-social a{
     color: black;

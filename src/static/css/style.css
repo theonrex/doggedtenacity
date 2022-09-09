@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
 .link {
   color: white;
 }
@@ -9,13 +9,18 @@ p {
   margin-bottom: 1rem;
 }
 
+a {
+  color: black !important;
+  text-decoration: underline;
+}
+
 body {
   background-color: #f3efff !important;
   background-repeat: no-repeat;
 }
 
 h1, h2, h3, h4, h5, h6, p, span, header, article {
-  font-family: "Cabin", sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .navbar button {
@@ -141,6 +146,11 @@ h1, h2, h3, h4, h5, h6, p, span, header, article {
   border-color: rgba(255, 255, 255, 0.69) !important;
 }
 
+.navbar-brand {
+  font-weight: 700;
+  font-family: "Titillium Web", sans-serif;
+}
+
 .active {
   color: #560bad !important;
 }
@@ -148,7 +158,7 @@ h1, h2, h3, h4, h5, h6, p, span, header, article {
 .nav-link {
   font-weight: bold;
   margin: auto 19px;
-  font-family: "Cabin", sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .nav-link:hover {
@@ -176,8 +186,9 @@ h1, h2, h3, h4, h5, h6, p, span, header, article {
 }
 
 .Treading {
-  font-family: "Cabin", sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-size: 4em;
+  font-weight: 900;
   background: #560bad;
   background: linear-gradient(to right, #8519ff 22%, #560bad 74%);
   -webkit-background-clip: text;
@@ -213,7 +224,7 @@ h1, h2, h3, h4, h5, h6, p, span, header, article {
 
 @media screen and (max-width: 1204px) {
   .Treading {
-    font-family: "Cabin", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-size: 3.3em;
   }
 }
@@ -244,6 +255,14 @@ h1, h2, h3, h4, h5, h6, p, span, header, article {
     text-align: justify;
   }
 }
+.post_subtitle {
+  color: #000000;
+}
+
+.post_subtitle:hover {
+  color: #000000 !important;
+}
+
 .singlePost-img,
 .popuplar_current_img {
   width: 50% !important;
@@ -494,6 +513,7 @@ footer {
 }
 
 .blog h1 {
+  font-weight: 900;
   padding-top: 84px;
   width: 80%;
   font-size: 3em;
@@ -544,6 +564,7 @@ footer {
 }
 
 .post-Title {
+  font-weight: 700;
   text-decoration: underline;
   padding-top: 7px;
   background: #560bad;
@@ -557,6 +578,10 @@ footer {
 
 .post_subtitle span {
   color: #7700ff !important;
+}
+
+.post_subtitle {
+  padding-bottom: 1em;
 }
 
 a {
@@ -858,6 +883,7 @@ a {
 .icons-social a {
   padding: 25px 0;
   display: block;
+  letter-spacing: 0.2em;
 }
 
 .icons-social a {

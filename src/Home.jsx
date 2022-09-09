@@ -28,7 +28,7 @@ function App() {
 						Inspired by Christ, Composed by Love
 					</header>
 					<h1 className="Treading">
-						Explore The  Depth <br />
+						Explore The Depth <br />
 						<span> Of The Insightful</span> <br /> Words Of Christ
 					</h1>
 					<p className="philosophy">
@@ -46,12 +46,14 @@ function App() {
 					/>
 				</div>
 			</div>
-			<Popular/>
+			<header className="popular">Popular Post</header>
+
+			<Popular />
 			<div>
-				<Explore/>
+				<Explore />
 			</div>
 			<div>
-				<Gallery/>
+				<Gallery />
 			</div>
 		</div>
 	);
