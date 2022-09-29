@@ -18,6 +18,7 @@ let naviagte = useNavigate();
 							data-aos-easing="linear"
 							data-aos-duration="1500"
 							className="post-mg"
+							target="_blank"
 							onClick={() => naviagte(`/posts/${data.id}`)}
 						>
 							<div>

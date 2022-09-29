@@ -83,13 +83,10 @@ function App() {
 					<div className="text-center p-3">
 						© 2020 Copyright:{" "}
 						<a className="text-white" href="/#">
-							rexblog
+							Dogged Tenacity
 						</a>
 					</div>
-					Designed by{" "}
-					<a className="text-white" href="https://olawandearmstrong.com/">
-						theonrex
-					</a>
+				
 				</footer>
 			</div>
 			{/* End of .container  */}

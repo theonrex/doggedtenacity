@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import emailjs, { init } from "@emailjs/browser";
+import { useForm } from "react-hook-form";
 
 // import BlogNewsLetter from "./BlogNewsLetter";
 // import CustomForm from "./Mail/mailchimp";
@@ -8,17 +9,17 @@ import MailchimpForm from "./Mail/CustomForm";
 
 function Contact() {
 	const form = useRef();
+	const {
+		register,
+		formState: { errors },
+		handleSubmit,
+		reset,
+	} = useForm();
 
-	const [values, setValues] = useState({
-		name: "",
-		email: "",
-		message: "",
-	});
 	const [status, setStatus] = useState("");
+	const [failed, setFailed] = useState("");
 
-	const sendEmail = (e) => {
-		e.preventDefault(); // prevents the page from reloading when you hit “Send”
-
+	const onSubmit = (data) => {
 		emailjs
 			.sendForm(
 				process.env.REACT_APP_SERVICE,
@@ -29,62 +30,26 @@ function Contact() {
 			.then(
 				(response) => {
 					console.log("SUCCESS!", response);
-					setValues({
-						name: "",
-						email: "",
-						message: "",
-					});
+					// setData({
+					// 	register,
+					// });
 					setStatus("SUCCESS");
+					setTimeout(() => {
+						reset({
+							name: "",
+							email: "",
+							message: "",
+						});
+					}, 9000);
 				},
 				(error) => {
-					console.log("FAILED...", error);
+					alert("FAILED...", error);
+					setFailed("FAILED");
 				}
 			);
+
+		console.log(onSubmit);
 	};
-	// 		.then(
-	// 			(result) => {
-	// 				return alert(`"SUCCESS!" `, result);
-	// 				setValues({
-	// 					message: ''
-	// 				});
-	// 				setStatus('SUCCESS')
-	// 			},
-	// 			(error) => {
-	// 				console.log("FAILED...", error);
-	// 			}
-	// 		);
-	// };
-
-	useEffect(() => {
-		if (status === "SUCCESS") {
-			setTimeout(() => {
-				setStatus("");
-			}, 3000);
-		}
-	}, [status]);
-
-	const handleChange = (e) => {
-		setValues((values) => ({
-			...values,
-			[e.target.name]: e.target.value,
-		}));
-	};
-
-	// const [message, setMessage] = useState("");
-	// const [error, setError] = useState(null);
-
-	// function isValidEmail(email) {
-	// 	return /\S+@\S+\.\S+/.test(email);
-	// }
-	// const handleChange = (event) => {
-	// 	if (!isValidEmail(event.target.value)) {
-	// 		setError("Email is invalid");
-	// 	} else {
-	// 		setError(null);
-	// 	}
-
-	// 	setMessage(event.target.value);
-	// };
 
 	return (
 		<div>
@@ -130,47 +95,65 @@ function Contact() {
 					<header>Get in Touch</header>
 					<p></p>
 					{status && renderAlert()}
-					<form ref={form} onSubmit={sendEmail}>
+					{failed && renderError()}
+					{onSubmit}
+					<form ref={form} onSubmit={handleSubmit(onSubmit)}>
 						<label>Name</label>
 						<input
 							type="text"
 							placeholder="John Smith"
 							name="name"
-							value={values.name}
 							id="name"
-							onChange={handleChange}
+							{...register("name", { required: true })}
 						/>
+						{errors.name && <p className="error">Input Your Name</p>}
 						<label>Email</label>
 						<input
 							type="email"
-							placeholder="example@email.com"
 							name="email"
-							onChange={handleChange}
-							id="message"
-							value={values.email}
-							handleChange={handleChange}
+							// onChange={handleChange}
+							id="email"
+							placeholder="Your Email"
+							{...register("email", {
+								required: true,
+								pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+							})}
 						/>
-						{/* {error && <p style={{ color: "red" }}>{error}</p>} */}
-
+						{errors.email && <p className="error">Invalid email</p>}
 						<label>Message</label>
 						<textarea
+							type="message"
 							name="message"
-							value={values.message}
-							onChange={handleChange}
-							handleChange={handleChange}
-							placeholder="Type Your Message Here"
+							id="message"
+							// onChange={handleChange}
+							{...register("message", { required: true })}
+							placeholder=" Your Message"
 						/>
-						<input type="submit" value="Send Message" />
+						
+						{errors.message && (
+							<p className="error"> Message Cannot be empty</p>
+						)}
+						<input type="submit"  onClick={reset} />
 					</form>
 				</section>
 			</div>
 		</div>
 	);
 }
-
 const renderAlert = () => (
-	<div className="px-4 py-3 leading-normal text-blue-700 bg-blue-100 rounded mb-5 text-center">
-		<p>your message submitted successfully</p>
+	<div className="px-4 py-3  submitted ">
+		<p>Your Message Submitted Successfully</p>
+	</div>
+);
+const renderError = () => (
+	<div className="px-4 py-3  submitted failed">
+		<p>
+			{" "}
+			<a href="#social-media">
+				Your Message was not Submitted Successfully.{" "}
+				<span>Click here to contact me via social media links</span>
+			</a>{" "}
+		</p>
 	</div>
 );
 export default Contact;

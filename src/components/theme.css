@@ -3,7 +3,8 @@
 }
 
 
-.dark__mode{
+.dark__mode,
+.dark__mode .recent_id{
         background-color: #1d082c !important;
             background-image:
                 radial-gradient(at 47% 33%, hsl(268.57, 100%, 8%) 0, transparent 59%),
@@ -27,8 +28,10 @@
 .dark__mode header  {
             color: white !important;
 }
+ 
 
-.dark__mode footer{
+.dark__mode footer,
+.dark__mode .recentPost_Link      {
     background-color: #120223;
 }
 .dark__mode .sub_width {

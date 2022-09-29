@@ -28,6 +28,9 @@ function BlogAuthor() {
 			{author &&
 				author.map((item, index) => (
 					<div className="rowx">
+						<hr 
+						/>
+						
 						<div className="author-img">
 							<img src={urlFor(item.image).width(200).url()} alt="" />
 						</div>

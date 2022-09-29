@@ -15,6 +15,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Popular from "./components/popular"
 import Explore from "./components/Explore";
 import Gallery from "./components/Gallery";
+import Recent from "./categories/Recent";
+import ReadMore from "./categories/ReadMore";
 
 
 function App() {
@@ -47,9 +49,12 @@ function App() {
 				</div>
 			</div>
 			<header className="popular">Popular Post</header>
-			<div
-			
-			>
+
+			<div className="rowx">
+				
+			</div>
+
+			<div>
 				<Popular />
 			</div>
 			<div

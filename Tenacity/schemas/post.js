@@ -8,6 +8,7 @@ export default {
       title: 'Title',
       type: 'string',
     },
+    
     {
       name: 'slug',
       title: 'Slug',
@@ -46,11 +47,21 @@ export default {
       type: 'array',
       of: [{type: 'reference', to: {type: 'category'}}],
     },
+     {
+  title: "Tags",
+  name: "tags",
+  type: "array",
+  of: [{type: "string"}],
+  options: {
+    layout: "tags"
+  }
+},
     {
       name: 'publishedAt',
       title: 'Published at',
       type: 'datetime',
     },
+   
     {
       name: 'body',
       title: 'Body',

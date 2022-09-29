@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Data } from "../data";
+import Recent from "../categories/Recent";
 
 
 function PopularCurrent() {
@@ -16,26 +17,36 @@ function PopularCurrent() {
 			setData(data);
 		}
 	}, [id]);
-	if (!data) return <div className="loadinf">please wait....</div>;
+	if (!data) return <div className="loading">please wait....</div>;
 
   return (
-		<div>
-			<div className="container">
+		<div className="container popular_div rowx">
+			<div className=" popuplar_current col70">
 				<header className="singlePost-title"> {data.title} </header>
 				<div className="singlePost-img popuplar_current_img">
 					<img src={data.image} alt="author" />{" "}
 				</div>
 
 				<section>
-					<div className="authorImage-img">
-						<img src={data.authorImg} alt="" />{" "}
-					</div>
-					<header className="singlePost-header">
-						{" "}
-						{data.author} <br /> <span>{data.bio}</span>{" "}
-					</header>
 					<article className="singlePost-body">{data.description}</article>
 				</section>
+
+				<div className="rowx">
+					<hr />
+					<div className="author_div">
+						<div className="author_img">
+							<img src={data.authorImg} alt="" />{" "}
+						</div>
+
+						<span className="items_section">
+							<h3> {data.author} </h3>
+							<h4> {data.bio} </h4>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div className="recent_id col30 popular_div">
+				<Recent />
 			</div>
 		</div>
 	);

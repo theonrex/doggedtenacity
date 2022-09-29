@@ -1,11 +1,11 @@
-import News from './static/images/news.png'
+import News from './static/images/myhc_78543.jpg'
 import SammImg from './static/images/SAMpngcopy.png'
 export const Data = [
     {
         id: "GoodGovernance",
         title: " Good Governance",
         slug: " GoodGovernance",
-        subTitle: "I have been in the workforce for nearly a decade now, and have learned many I have been in the workforce for nearly a decade now, and have learned many  ",
+        subTitle: "I have been in the workforce for nearly a decade now, and have learned many I have   ",
         author: "Kayode Samuel",
         authorImg: SammImg,
         image : News,
@@ -17,7 +17,7 @@ export const Data = [
         id: "Good",
         title: " Good Governance",
         slug: " GoodGovernance",
-        subTitle: "I have been in the workforce for nearly a decade now, and have learned many I have been in the workforce for nearly a decade now, and have learned many ",
+        subTitle: "I have been in the workforce for nearly a decade now, and have learned many I ha",
         author: "Kayode Samuel",
         image : News,
         authorImg: SammImg,
@@ -30,7 +30,7 @@ export const Data = [
         id: "Governance",
         title: " Good Governance",
         slug: " GoodGovernance",
-        subTitle: "I have been in the workforce for nearly a decade now, and have learned many I have been in the workforce for nearly a decade now, and have learned many ",
+        subTitle: "I have been in the workforce for nearly a decade now, and have learned many I ",
         image : News,
         authorImg: SammImg,
         author: "Kayode Samuel",

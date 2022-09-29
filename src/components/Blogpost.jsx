@@ -23,18 +23,13 @@ function Blogpost() {
 			subTitle,
             slug,
 			publishedAt,
-            mainImage{
-                asset->{
-                    _id,
-                    url
-                },
-                alt
-            }
+            mainImage,
         }`
 			) //then get all data fetched and == to setPostData
 			.then((data) => setPostData(data));
 		// .catch(console.error)
 	}, []);
+	console.log(postData);
 
 	return (
 		<div className="container">
@@ -60,6 +55,7 @@ function Blogpost() {
 									{/* /Map over postData/ */}
 
 									<Link
+										target="_blank"
 										to={"/post/" + post.slug.current}
 										key={post.slug.current}
 									>
@@ -70,10 +66,12 @@ function Blogpost() {
 											data-aos-duration="1500"
 										>
 											{/* src={urlFor(food.foodImage).width(200).url()} */}
+
 											<img
 												src={urlFor(post.mainImage).width(200).url()}
 												alt=""
 											/>
+
 											<div className="text-mg">
 												<span>
 													<h3 className="post-Title"> {post.title} </h3>
