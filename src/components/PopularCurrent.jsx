@@ -27,23 +27,22 @@ function PopularCurrent() {
 					<img src={data.image} alt="author" />{" "}
 				</div>
 
-				<section>
-					<article className="singlePost-body">{data.description}</article>
-				</section>
+				<section className="singlePost-body">
+					<article className="">{data.description}</article>
+					<div className="rowx">
+						<hr />
+						<div className="author_div">
+							<div className="author_img">
+								<img src={data.authorImg} alt="" />{" "}
+							</div>
 
-				<div className="rowx">
-					<hr />
-					<div className="author_div">
-						<div className="author_img">
-							<img src={data.authorImg} alt="" />{" "}
+							<span className="items_section">
+								<h3> {data.author} </h3>
+								<h4> {data.bio} </h4>
+							</span>
 						</div>
-
-						<span className="items_section">
-							<h3> {data.author} </h3>
-							<h4> {data.bio} </h4>
-						</span>
 					</div>
-				</div>
+				</section>
 			</div>
 			<div className="recent_id col30 popular_div">
 				<Recent />

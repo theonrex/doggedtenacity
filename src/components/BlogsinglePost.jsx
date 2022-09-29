@@ -80,8 +80,8 @@ function BlogsinglePost() {
 					</article>
 					{author &&
 						author.map((item, index) => (
-							<div className="rowx">
-								<hr />
+							<div className="rowx singlePost-body">
+								
 								<div className="author_div">
 									<div className="author_img">
 										<img src={urlFor(item.image).width(200).url()} alt="" />
