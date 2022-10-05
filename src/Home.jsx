@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import MyCrud from "./myCrud";
 
 //images
-// import Furniture from "./static/images/furniture.png"
+import Goals from "./static/images/man.png"
 
 
 //pages
@@ -27,32 +27,31 @@ function App() {
 			<div className="rowx landing-page">
 				<div className="col50">
 					<header className="Beautiful">
-						Inspired by Christ, Composed by Love
+						Faith ~ Finance - Family - Fitness - Future
 					</header>
 					<h1 className="Treading">
-						Explore The Depth <br />
-						<span> Of The Insightful</span> <br /> Words Of Christ
+						Inspiring You
+						<br />
+						<span> With Words And</span> <br /> Stories That Speak.
 					</h1>
 					<p className="philosophy">
-						We focus on how to grow in relationship with The Father, Son and
-						Holy Spirit. We provide relevant, topical, and encouraging articles
-						on everything from Living a holy life to parenting, spiritual
-						warfare to healing. Our philosophy is when we know Christ
-						intimately.
+						We provide relevant, topical, and encouraging articles on everything
+						from Faith, Finance, Family, Fitness, Future. Our philosophy is
+						Inspiring You With Words And Stories That Speak.
 					</p>
 				</div>
-				<div className="col50 bible">
-					<img
-						src="https://images.unsplash.com/photo-1593485589800-579b43749b15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmlibGUlMjBzdG9yeXxlbnwwfHwwfHw%3D&w=1000&q=80"
-						alt="unsplash-img"
-					/>
+				<div className="col50  formula">
+					<img src={Goals} alt="unsplash-img" />
+					<p>
+						"Life has no formula to stop a man who has in him the yeast to Rise"
+						<br />
+						<span>E.W Kenyon.</span>
+					</p>
 				</div>
 			</div>
 			<header className="popular">Popular Post</header>
 
-			<div className="rowx">
-				
-			</div>
+			<div className="rowx"></div>
 
 			<div>
 				<Popular />

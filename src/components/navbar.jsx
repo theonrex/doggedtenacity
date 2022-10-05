@@ -24,7 +24,7 @@ function NavHead() {
 				{["xl"].map((expand) => (
 					<Navbar key={expand} expand={expand} className="mb-3 container">
 						<Container fluid>
-							<Navbar.Brand href="/">Dogged Tenacity</Navbar.Brand>
+							<Navbar.Brand href="/">DOGGED TENACITY</Navbar.Brand>
 							<Navbar.Toggle
 								aria-controls={`offcanvasNavbar-expand-${expand}`}
 							/>
@@ -37,7 +37,7 @@ function NavHead() {
 								
 								<Offcanvas.Header closeButton>
 									<Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-										Dogged Tenacity
+										DOGGED TENACITY
 									</Offcanvas.Title>
 								</Offcanvas.Header>
 								<Offcanvas.Body>

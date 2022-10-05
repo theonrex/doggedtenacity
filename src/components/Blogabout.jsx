@@ -22,8 +22,7 @@ export default function BlogAbout() {
 							data-aos="zoom-in"
 							data-aos-duration="2000"
 						>
-							{" "}
-							About Me{" "}
+							I'm Your Guy
 						</header>
 						<p className="about_p" data-aos="fade-up" data-aos-duration="3000">
 							Kayode Samuel Olakunle "Samwonders" is a business enthusiast who

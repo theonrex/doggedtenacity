@@ -197,14 +197,28 @@ background: #560bad;
     color: white;
     text-align: justify;
 }
+.formula{
+    position: relative;
+}
+.formula p{
+    position: absolute;
+    top: 4em;
+    padding: 2em;
+    width: 60%;
+    font-weight: bold !important;
+    font-size: 1em;
+color: #000000;}
+.formula span{
+    font-weight: normal;
+}
 
-.bible img{
+.formula img{
     border-radius: 9px;
     -webkit-box-shadow: -1px 3px 23px 0px #2b00ff25;
         -moz-box-shadow: -1px 3px 23px 0px #2b00ff25;
         box-shadow: -1px 3px 23px 0px #2b00ff25;
 }
-.bible img:hover {
+.formula img:hover {
     padding-top: 2px;
     -webkit-box-shadow: -1px 3px 23px 0px #2b00ff76;
         -moz-box-shadow: -1px 3px 23px 0px #2b00ff76;
@@ -783,7 +797,6 @@ a {
 }
 
 .items-section{
-    width: 80%;
     float: left;
     padding: 0 18px;
 }
@@ -860,8 +873,13 @@ display: block;
     }
 
     .author-img img {
-        width: 100px;
+        width: 50px;
     }
+         .items-section {
+            
+             float: left;
+             padding: 0 1em;
+         }
 
 }
 @media screen and (max-width:500px) {
@@ -877,8 +895,13 @@ display: block;
     }
 
     .author-img img {
-        width: 100px;
+        width: 50px;
     }
+        .items-section {
+            
+            float: left;
+            padding: 0 5px;
+        }
 .post-mg{
 width: 100%;
 margin-left: auto;margin-right: auto;}
