@@ -786,12 +786,7 @@ a {
           
             padding-top: 12px;
         }
-        .singlePost-body {
-    padding-top: 32px;
-    text-align: left;
-    font-size: 1em;
-    line-height: 1.6em;
-}
+ 
 }
 //author
 .author_div{
@@ -935,6 +930,12 @@ width: 100%;
 margin-left: auto;margin-right: auto;}
 }
 @media screen and (max-width:315px) {
+    .singlePost-body {
+        padding-top: 32px;
+        text-align: left;
+        font-size: 1em;
+        line-height: 1.6em;
+    }
     .post-Title {
           font-size: 1.2em;
         }
