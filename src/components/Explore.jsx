@@ -1,4 +1,9 @@
 import React from 'react'
+import FaithImg from '../static/images/Faith-Website.jpg'
+import FinanceImg from '../static/images/money-2724241_640.jpg'
+import Familyimg from '../static/images/family.jpg'
+import FitnessImg from '../static/images/fitness.jpg'
+import Future from '../static/images/future.jpg'
 
 function Explore() {
   return (
@@ -6,14 +11,24 @@ function Explore() {
 			<div className="rowx">
 				<div className="col50 bible">
 					<img
-						src="https://images.unsplash.com/photo-1593485589800-579b43749b15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmlibGUlMjBzdG9yeXxlbnwwfHwwfHw%3D&w=1000&q=80"
-						alt="un"
+						src={FaithImg}
+						alt="Faith"
 					/>
 				</div>
 				<div className="col50 explore-mg">
 					<h1 className="Treading Insightful">
-						Explore the <br />
-						<span>Insightful</span> <br /> Words of Christ
+					Faith
+					</h1>
+					<p className="philosophy">
+					Faith is the substance or assurance of things we hope for, but have not yet received. Faith (confidence, belief, trust) is also our evidence of that which is not seen—the invisible spiritual things. Faith comes before a prayer is answered or before an individual has received what he or she has requested from God. If we have received what we asked for, then faith is not needed.
+					</p>
+				
+				</div>
+			</div>
+			<div className="rowx Finance">
+			<div className="col50 explore-mg Finance_text">
+					<h1 className="Treading Insightful">
+					Finance
 					</h1>
 					<p className="philosophy">
 						We focus on how to grow in relationship with The Father, Son and
@@ -22,139 +37,82 @@ function Explore() {
 						warfare to healing. Our philosophy is when we know Christ
 						intimately.
 					</p>
-					<div className="topics ">
-						<div className="icons-col rowx ">
-							<div className=" explore-icons ">
-								<div className="img">
-									{" "}
-									<img
-										src="https://img.icons8.com/ios-filled/100/000000/church.png"
-										alt="un"
-									/>
-								</div>{" "}
-								<h2>Holiness</h2>
-							</div>
-							<div className="  explore-icons">
-								<div className="img">
-									{" "}
-									<img
-										src="https://img.icons8.com/ios-filled/100/000000/church.png"
-										alt="un"
-									/>
-								</div>{" "}
-								<h2>Faith</h2>
-							</div>
-						</div>
-						<div className="icons-col rowx">
-							<div className="  explore-icons">
-								<div className="img">
-									{" "}
-									<img
-										src="https://img.icons8.com/ios-filled/100/000000/church.png"
-										alt="un"
-									/>
-								</div>{" "}
-								<h2>Fellowship</h2>
-							</div>
-							<div className="  explore-icons">
-								<div className="img">
-									{" "}
-									<img
-										src="https://img.icons8.com/ios-filled/100/000000/church.png"
-										alt="un"
-									/>
-								</div>{" "}
-								<h2>Love</h2>
-							</div>
-						</div>
-					</div>
+				
+				</div>
+				<div className="col50 bible Finance_img">
+					<img
+						src={FinanceImg}
+						alt="Finance"
+					/>
+				</div>
+			
+			</div>
+			<div className="rowx">
+				<div className="col50 bible">
+					<img
+						src={Familyimg}
+						alt="Family"
+					/>
+				</div>
+				<div className="col50 explore-mg">
+					<h1 className="Treading Insightful">
+					Family
+					</h1>
+					<p className="philosophy">
+						We focus on how to grow in relationship with The Father, Son and
+						Holy Spirit. We provide relevant, topical, and encouraging articles
+						on everything from Living a holy life to parenting, spiritual
+						warfare to healing. Our philosophy is when we know Christ
+						intimately.
+					</p>
+				
+				</div>
+			</div>
+			<div className="rowx Fittness">
+		
+				<div className="col50 explore-mg Fittness_text">
+					<h1 className="Treading Insightful">
+					Fitness
+					</h1>
+					<p className="philosophy">
+						We focus on how to grow in relationship with The Father, Son and
+						Holy Spirit. We provide relevant, topical, and encouraging articles
+						on everything from Living a holy life to parenting, spiritual
+						warfare to healing. Our philosophy is when we know Christ
+						intimately.
+					</p>
+				
+				</div>
+				<div className="col50 bible Fittness_img">
+					<img
+						src={FitnessImg}
+						alt="Fittness"
+					/>
+				</div>
+			</div>
+			<div className="rowx">
+				<div className="col50 bible">
+					<img
+						src={Future}
+						alt="un"
+					/>
+				</div>
+				<div className="col50 explore-mg">
+					<h1 className="Treading Insightful">
+					Future
+					</h1>
+					<p className="philosophy">
+						We focus on how to grow in relationship with The Father, Son and
+						Holy Spirit. We provide relevant, topical, and encouraging articles
+						on everything from Living a holy life to parenting, spiritual
+						warfare to healing. Our philosophy is when we know Christ
+						intimately.
+					</p>
+				
 				</div>
 			</div>
 
-			<div>
-				<header className="videos-head line"> Explore Videos</header>
-				<div className="rowx popular-video  ">
-					<div className="col30 popular-post">
-						<div>
-							<img
-								src="https://images.unsplash.com/photo-1593485589800-579b43749b15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmlibGUlMjBzdG9yeXxlbnwwfHwwfHw%3D&w=1000&q=80"
-								alt="un"
-							/>
-						</div>
-						<div className="popular-post-text">
-							<h2>Love of Christ</h2>
-							
-						</div>
-						<p className="p-tags">tags</p>
-					</div>
-					<div className="col30 popular-post">
-						<div>
-							<img
-								src="https://images.unsplash.com/photo-1593485589800-579b43749b15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmlibGUlMjBzdG9yeXxlbnwwfHwwfHw%3D&w=1000&q=80"
-								alt="un"
-							/>
-						</div>
-						<div className="popular-post-text">
-							<h2>Love of Christ</h2>
-							
-						</div>
-						<p className="p-tags">tags</p>
-					</div>
-					<div className="col30 popular-post">
-						<div>
-							<img
-								src="https://images.unsplash.com/photo-1593485589800-579b43749b15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmlibGUlMjBzdG9yeXxlbnwwfHwwfHw%3D&w=1000&q=80"
-								alt="un"
-							/>
-						</div>
-						<div className="popular-post-text">
-							<h2>Love of Christ</h2>
-						</div>
-						<p className="p-tags">tags</p>
-					</div>
-				</div>
-				<div className="rowx">
-					<div className="col30 popular-post">
-						<div>
-							<img
-								src="https://images.unsplash.com/photo-1593485589800-579b43749b15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmlibGUlMjBzdG9yeXxlbnwwfHwwfHw%3D&w=1000&q=80"
-								alt="un"
-							/>
-						</div>
-						<div className="popular-post-text">
-							<h2>Love of Christ</h2>
-							
-						</div>
-						<p className="p-tags">tags</p>
-					</div>
-					<div className="col30 popular-post">
-						<div>
-							<img
-								src="https://images.unsplash.com/photo-1593485589800-579b43749b15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmlibGUlMjBzdG9yeXxlbnwwfHwwfHw%3D&w=1000&q=80"
-								alt="un"
-							/>
-						</div>
-						<div className="popular-post-text">
-							<h2>Love of Christ</h2>
-							
-						</div>
-						<p className="p-tags">tags</p>
-					</div>
-					<div className="col30 popular-post">
-						<div>
-							<img
-								src="https://images.unsplash.com/photo-1593485589800-579b43749b15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmlibGUlMjBzdG9yeXxlbnwwfHwwfHw%3D&w=1000&q=80"
-								alt="un"
-							/>
-						</div>
-						<div className="popular-post-text">
-							<h2>Love of Christ</h2>
-							
-						</div>
-						<p className="p-tags">tags</p>
-					</div>
-				</div>
-			</div>
+		
 		</div>
 	);
 }

@@ -230,6 +230,13 @@ color: #000000;}
 
 //landing media
 
+@media screen and (min-width:1205px) {
+    .explore-mg .Treading {
+        padding-top: 1em;
+
+    }
+}
+
 @media screen and (max-width:1204px) {
     .Treading {
             font-family: $Cabin;
@@ -238,18 +245,29 @@ color: #000000;}
         }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1204px) {
     .col50{
         width: 100%;
     }
         .landing-page p {
             font-size: 3.5vw;
             
+            text-align: center;
+        }
+
+        .formula p {
+            position: absolute;
+            top: 5vw;
+            padding: 1em;
+            width: 60%;
             text-align: left;
+            font-size: 3.3vw;
+            font-weight: bold !important;
+            color: #000000;
         }
                 .Treading {
                     font-family: "Cabin", sans-serif;
-                    font-size: 10vw;
+                    font-size: 9vw;
                     text-align: center;
                     font-weight: 900;
                     // text-transform: uppercase;
@@ -337,7 +355,7 @@ color: #000000;}
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1204px) {
     .col30{
         width: 100%;
     }
@@ -421,7 +439,7 @@ padding: 0 22px;
                   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1204px) {
 
     .Treading br{
 display: none;
@@ -462,6 +480,12 @@ display: none;
     .videos-head{
         font-size: 8vw;
     }
+    .formula p {
+        top: 5vw;
+        padding: 1em;
+ 
+    }
+      
 }
 
 //gallery
@@ -556,7 +580,7 @@ margin: auto 2%;
    
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1204px){
     .col-md-2 h6{
         padding-bottom: 20px;
     }
@@ -587,9 +611,7 @@ footer{
     margin-bottom: 1.5em;
 border-radius: 0.5em;
 background-color: #31087B;
-box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+
 
 
 }
@@ -711,7 +733,7 @@ a {
 }
 
 //blog mobile
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1204px) {
 
     .recent_id{
         margin-top: 4em;
@@ -741,6 +763,7 @@ a {
         font-size: 2em;
 
     }
+
          .recentPost_post_subtitle {
              font-size: 0.7em;
          }
@@ -763,6 +786,12 @@ a {
           
             padding-top: 12px;
         }
+        .singlePost-body {
+    padding-top: 32px;
+    text-align: left;
+    font-size: 1em;
+    line-height: 1.6em;
+}
 }
 //author
 .author_div{
@@ -865,7 +894,7 @@ display: block;
 }
 //author media
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1204px) {
     .post-Title {
         font-size: 2em;
         padding: 10px 0;
@@ -921,7 +950,7 @@ margin-left: auto;margin-right: auto;}
 }
 
 //author-active
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1204px) {
     .singlePost-title{
         font-size: 1.5em;
         text-transform: capitalize;
@@ -933,9 +962,14 @@ margin-left: auto;margin-right: auto;}
 }
 
 //about 
-.about-img img{
+.about_img{
+    display: flex;
+
+}
+.about_img img{
     position: relative;
     width: 70%;
+height: 100%;
     padding:0 10px;
     border-radius: 5%;
     transition: 0.5s;
@@ -944,7 +978,7 @@ margin-left: auto;margin-right: auto;}
             -webkit-background-clip:image;
     
 }
-.about-img img:hover {  
+.about_img img:hover {  
         background: #560bad;
     background: linear-gradient(to right, #8519ff 22%, #00aeffd8 74%);
     -webkit-background-clip: image;
@@ -997,7 +1031,8 @@ color: black;
 }
 //about media
 
-@media screen and (max-width:1000px) {
+
+@media screen and (max-width:1200px) {
     .col30,
     .col40,
     .col60,
@@ -1012,11 +1047,11 @@ color: black;
                      padding-top: 2px;
                    
                  }
-    .about-img {
+    .about_img {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-    }  .about-img img{
+    }  .about_img img{
         width: 55%;
         margin-left: auto;
         margin-right: auto;
@@ -1125,3 +1160,24 @@ background-color: #ffffff;
     padding-bottom: 0.7em;
 }
 
+@media screen and (max-width:1204px) {
+.Finance{
+    display: flex;
+    flex-direction: column;
+
+}
+.Finance_img{order: 1;}
+.Finance_text{
+    order: 2;
+}
+.Fittness{
+    display: flex;
+    flex-direction: column;
+
+}
+.Fittness_img{order: 1;}
+.Fittness_text{
+    order: 2;
+}
+
+}

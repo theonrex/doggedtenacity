@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../static/images/SAMpng.png";
+import Image from "../static/images/Samuel.png";
 
 export default function BlogAbout() {
 	return (
@@ -7,14 +7,14 @@ export default function BlogAbout() {
 			<section className="container">
 				<div className="rowx about">
 					<section
-						className="about-img col40"
+						className="about_img col40"
 						data-aos="fade-right"
 						data-aos-offset="300"
 						data-aos-easing="ease-in-sine"
 						data-aos-duration="2000"
 					>
 						{" "}
-						<img src={Image} alt="" srcset="" />{" "}
+						<img src={Image} alt="" srcset="Author Image" />{" "}
 					</section>
 					<section className="col60">
 						<header

@@ -21,7 +21,7 @@ import ReadMore from "./categories/ReadMore";
 
 function App() {
 	return (
-		<div className="container" data-aos="fade-up" data-aos-duration="3000">
+		<div className="container" >
 			{/* <MyCrud /> */}
 
 			<div className="rowx landing-page">
@@ -58,15 +58,12 @@ function App() {
 			</div>
 			<div
 				className="explore_bg"
-				data-aos-anchor-placement="top-center"
-				data-aos-duration="1000"
+			
 			>
 				<Explore />
 			</div>
 			<div
-				data-aos="fade-down"
-				data-aos-easing="linear"
-				data-aos-duration="500"
+			
 			>
 				<Gallery />
 			</div>

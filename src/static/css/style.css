@@ -243,23 +243,38 @@ h1, h2, h3, h4, h5, h6, p, span, header, article {
   width: 80%;
 }
 
+@media screen and (min-width: 1205px) {
+  .explore-mg .Treading {
+    padding-top: 1em;
+  }
+}
 @media screen and (max-width: 1204px) {
   .Treading {
     font-family: "Titillium Web", sans-serif;
     font-size: 3.3em;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1204px) {
   .col50 {
     width: 100%;
   }
   .landing-page p {
     font-size: 3.5vw;
+    text-align: center;
+  }
+  .formula p {
+    position: absolute;
+    top: 5vw;
+    padding: 1em;
+    width: 60%;
     text-align: left;
+    font-size: 3.3vw;
+    font-weight: bold !important;
+    color: #000000;
   }
   .Treading {
     font-family: "Cabin", sans-serif;
-    font-size: 10vw;
+    font-size: 9vw;
     text-align: center;
     font-weight: 900;
   }
@@ -346,7 +361,7 @@ h1, h2, h3, h4, h5, h6, p, span, header, article {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1204px) {
   .col30 {
     width: 100%;
   }
@@ -417,7 +432,7 @@ h1, h2, h3, h4, h5, h6, p, span, header, article {
     width: 40%;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1204px) {
   .Treading br {
     display: none;
   }
@@ -451,6 +466,10 @@ h1, h2, h3, h4, h5, h6, p, span, header, article {
 @media screen and (max-width: 500px) {
   .videos-head {
     font-size: 8vw;
+  }
+  .formula p {
+    top: 5vw;
+    padding: 1em;
   }
 }
 .Gallery .col30 {
@@ -536,7 +555,7 @@ h1, h2, h3, h4, h5, h6, p, span, header, article {
   display: block;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1204px) {
   .col-md-2 h6 {
     padding-bottom: 20px;
   }
@@ -565,9 +584,6 @@ footer {
   margin-bottom: 1.5em;
   border-radius: 0.5em;
   background-color: #31087B;
-  box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .recentPost_post_subtitle {
@@ -694,7 +710,7 @@ a {
   text-decoration: none !important;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1204px) {
   .recent_id {
     margin-top: 4em;
     width: 80%;
@@ -740,6 +756,12 @@ a {
     width: 100%;
     font-size: 0.7em;
     padding-top: 12px;
+  }
+  .singlePost-body {
+    padding-top: 32px;
+    text-align: left;
+    font-size: 1em;
+    line-height: 1.6em;
   }
 }
 .author_div {
@@ -850,7 +872,7 @@ a {
   width: 100%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1204px) {
   .post-Title {
     font-size: 2em;
     padding: 10px 0;
@@ -901,7 +923,7 @@ a {
     padding-bottom: 22px;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1204px) {
   .singlePost-title {
     font-size: 1.5em;
     text-transform: capitalize;
@@ -911,9 +933,14 @@ a {
     margin: auto;
   }
 }
-.about-img img {
+.about_img {
+  display: flex;
+}
+
+.about_img img {
   position: relative;
   width: 70%;
+  height: 100%;
   padding: 0 10px;
   border-radius: 5%;
   transition: 0.5s;
@@ -922,7 +949,7 @@ a {
   -webkit-background-clip: image;
 }
 
-.about-img img:hover {
+.about_img img:hover {
   background: #560bad;
   background: linear-gradient(to right, #8519ff 22%, rgba(0, 174, 255, 0.8470588235) 74%);
   -webkit-background-clip: image;
@@ -973,7 +1000,7 @@ a {
   font-size: 1.2em;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .col30,
 .col40,
 .col60,
@@ -986,12 +1013,12 @@ a {
   .singlePost-body {
     padding-top: 2px;
   }
-  .about-img {
+  .about_img {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
-  .about-img img {
+  .about_img img {
     width: 55%;
     margin-left: auto;
     margin-right: auto;
@@ -1101,4 +1128,27 @@ a {
 .usflex {
   display: block;
   padding-bottom: 0.7em;
+}
+
+@media screen and (max-width: 1204px) {
+  .Finance {
+    display: flex;
+    flex-direction: column;
+  }
+  .Finance_img {
+    order: 1;
+  }
+  .Finance_text {
+    order: 2;
+  }
+  .Fittness {
+    display: flex;
+    flex-direction: column;
+  }
+  .Fittness_img {
+    order: 1;
+  }
+  .Fittness_text {
+    order: 2;
+  }
 }/*# sourceMappingURL=style.css.map */

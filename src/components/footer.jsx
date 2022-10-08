@@ -28,10 +28,10 @@ function App() {
 								<div className="col-md-2">
 									<h6 className="text-uppercase font-weight-bold">
 										<a
-											href="https://www.youtube.com/results?search_query=christian+videos"
+											href="/post"
 											className="text-white"
 										>
-											Videos
+											Blog
 										</a>
 									</h6>
 								</div>
@@ -44,8 +44,8 @@ function App() {
 								{/* Grid column  */}
 								<div className="col-md-2">
 									<h6 className="text-uppercase font-weight-bold">
-										<a href="/contact" className="text-white">
-											Help
+										<a href="/#gallery" className="text-white">
+											Gallery
 										</a>
 									</h6>
 								</div>
