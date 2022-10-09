@@ -230,6 +230,16 @@ input::selection {
     outline: none;
 
 }
+.dark__mode input::selection,
+.dark__mode input:active,
+.dark__mode input:focus, 
+.dark__mode input:hover {
+    border: solid #560bad!important;
+    border-width: 0 0 3px!important;
+    color: white;
+    outline: none;
+    padding-bottom: 2px;
+}
 
 @media screen and (max-width:1204px) {
     
