@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FcNightLandscape, FcLandscape } from "react-icons/fc";
-import "./theme.css";
+import "../static/css/Theme.css";
 
 function Contact() {
 	const [darkMode, setDarkMode] = useState(false);

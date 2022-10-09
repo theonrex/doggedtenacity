@@ -1,11 +1,11 @@
 {
   "root": true,
-  "project": {
-    "name": "Tenacity"
-  },
   "api": {
     "projectId": "pk2l7vhf",
     "dataset": "production"
+  },
+  "project": {
+    "name": "Tenacity"
   },
   "plugins": [
     "@sanity/base",

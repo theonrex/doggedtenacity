@@ -47,7 +47,6 @@ function Blogpost() {
 					never giving up on your goals no matter what happens around you.
 				</p>
 				<div className="">
-					<Popular />
 					<div className="postData rowx">
 						{postData &&
 							postData.map((post, index) => (

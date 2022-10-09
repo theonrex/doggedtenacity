@@ -6,7 +6,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import "../static/css/style.css";
+import "../static/css/Theme.css";
 //dark mode
 import DarkMode from "../components/darkmode";
 import { Link, useLocation } from "react-router-dom";
