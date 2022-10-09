@@ -19,67 +19,73 @@ const CustomForm = ({ status, message, onValidated }) => {
 					// const onValidated = (formData) => console.log(formData);
 
 	return (
-		<form className="mc__form" onSubmit={handleSubmit(onValidated)}>
-			<h3 className="mc__title">
-				{status === "success" && (
-					<div style={{ color: "green" }}>Subscribed !</div>
-				)}
-			</h3>
+    <form className="mc__form" onSubmit={handleSubmit(onValidated)}>
+      <h3 className="mc__title">
+        {status === "success" && (
+          <div style={{ color: "green" }}>Subscribed !</div>
+        )}
+      </h3>
 
-			{status === "sending" && (
-				<div className="mc__alert mc__alert sending">sending...</div>
-			)}
-			{status === "error" && (
-				<div
-					className="mc__alert mc__alert error"
-					dangerouslySetInnerHTML={{ __html: message }}
-				/>
-			)}
-			{status === "success" && (
-				<div
-					className="mc__alert mc__alert success"
-					dangerouslySetInnerHTML={{ __html: message }}
-				/>
-			)}
+      {status === "sending" && (
+        <div className="mc__alert mc__alert sending">sending...</div>
+      )}
+      {status === "error" && (
+        <div
+          className="mc__alert mc__alert error"
+          dangerouslySetInnerHTML={{ __html: message }}
+        />
+      )}
+      {status === "success" && (
+        <div
+          className="mc__alert mc__alert success"
+          dangerouslySetInnerHTML={{ __html: message }}
+        />
+      )}
 
-			{status !== "success" ? (
-				<div className="mc__field-container">
-					<input
-                    placeholder="Your Email"
-						{...register("mail", {
-							required: "Email Address is required",
-						})}
-					/>
-					<p className="error">{errors.mail?.message}</p>
-				</div>
-			) : null}
+      {status !== "success" ? (
+        <div className="mc__field-container">
+          <input
+            placeholder="Your Email"
+            type="Email"
+            autocapitalize="off"
+            autocorrect="off"
+            name="EMAIL"
+            id="EMAIL"
+            {...register("mail", {
+              required: "Email Address is required",
+            })}
+          />
+          <p className="error">{errors.mail?.message}</p>
+        </div>
+      ) : null}
 
-			{/*Close button appears if form was successfully sent*/}
-			{status === "success" ? (
-				"rex"
-			) : (
-				// <PrimaryCTAButton
-				// 	handleClick={() => setModalOpen(false)}
-				// 	label="close"
-				// 	size="big"
-				// 	customClass="g__justify-self-center"
-				// />
-				// "sharon"
-				<input type="submit" />
+      {/*Close button appears if form was successfully sent*/}
+      {status === "success" ? (
+        "rex"
+      ) : (
+        // <PrimaryCTAButton
+        // 	handleClick={() => setModalOpen(false)}
+        // 	label="close"
+        // 	size="big"
+        // 	customClass="g__justify-self-center"
+        // />
+        // "sharon"
+        <input type="submit" />
 
-				// <InputField
-				// 	label="subscribe"
-				// 	type="submit"
-				// 	formValues={[email, firstName, lastName]}
-				// />
-			)}
-		</form>
-	);
+        // <InputField
+        // 	label="subscribe"
+        // 	type="submit"
+        // 	formValues={[email, firstName, lastName]}
+        // />
+      )}
+    </form>
+  );
 };
 
 const MailchimpForm = (props) => {
 		const url =
-			"https://gmail.us18.list-manage.com/subscribe/post?u=e9ce3401f062aa032357227a9&id=f2eef6e434";
+      "https://gmail.us18.list-manage.com/subscribe/post?u=e9ce3401f062aa032357227a9&id=f2eef6e434";
+	// https://gmail.us18.list-manage.com/subscribe?u=e9ce3401f062aa032357227a9&id=f2eef6e434
 
 	
 	return (
