@@ -37,30 +37,33 @@ const Recent = () => {
     }, [])
 
 	return (
-		<div className="recentPost_main ">
-			<header>Recent Post</header>
-			{recent &&
-				recent.map((recentPost, index) => (
-					<div className="recentPost_Link">
-						<Link
-							target="_blank"
-							to={"/post/" + recentPost.slug.current}
-							key={recentPost.slug.current}
-						>
-							<div className="recentPost_img">
-								<img
-									src={urlFor(recentPost.mainImage).width(200).url()}
-									alt=""
-								/>
-							</div>
-							<p className="recentPost_post_subtitle">
-								{recentPost.subTitle} <span>read more.....</span>{" "}
-							</p>
-						</Link>
-					</div>
-				))}
-		</div>
-	);
+    <div className="recentPost_main ">
+      <header>Recent Post</header>
+      {recent &&
+        recent.map((recentPost, index) => (
+          <div className="recentPost_Link">
+            <Link
+              target="_blank"
+              to={"/post/" + recentPost.slug.current}
+              key={recentPost.slug.current}
+            >
+              <div className="recentPost_img">
+                <img
+                  src={urlFor(recentPost.mainImage).width(200).url()}
+                  alt=""
+                />
+              </div>
+              <div className="post_text_pd">
+                <h3 className="post-Title">{recentPost.title}</h3>
+                <p className="recentPost_post_subtitle">
+                  {recentPost.subTitle} <br /> <span>... read more.....</span>{" "}
+                </p>
+              </div>
+            </Link>
+          </div>
+        ))}
+    </div>
+  );
 };
 
 export default Recent;

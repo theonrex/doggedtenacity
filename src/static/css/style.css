@@ -639,7 +639,7 @@ footer {
 }
 
 .recentPost_post_subtitle {
-  padding: 0.7em;
+  padding: 0.4em 0 0.9em 0;
 }
 
 .recentPost_post_subtitle span {
@@ -656,9 +656,14 @@ footer {
   border-radius: 0.5em 0 0 0.5em;
 }
 
+.post_text_pd {
+  padding-left: 0.7em !important;
+  padding-right: 0.7em !important;
+}
+
 .recentPost_post_subtitle {
   font-size: 0.7em;
-  padding-top: 1em;
+  padding-top: 0;
   color: white;
 }
 
@@ -688,10 +693,13 @@ footer {
   margin: auto;
 }
 
+.rowx hr {
+  margin: 0 0 1em 0 !important;
+}
+
 .popularPost_main {
   margin: auto 2%;
   border-radius: 9px;
-  box-shadow: -1px 3px 23px 0px rgba(43, 0, 255, 0.15);
 }
 
 .text-mg {
@@ -980,7 +988,7 @@ a {
   .singlePost-body {
     padding-top: 32px;
     text-align: left;
-    font-size: 1em;
+    font-size: 0.7em;
     line-height: 1.6em;
   }
   .post-Title {
@@ -1003,6 +1011,16 @@ a {
   }
   .singlePost-body {
     width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  .singlePost-title {
+    font-size: 1.2em;
+    text-transform: capitalize;
+  }
+  .singlePost-body {
+    width: 100%;
     margin: auto;
   }
 }
