@@ -53,7 +53,7 @@ function App() {
 
       <div className="rowx"></div>
 
-      <div className="popular_post_Data rowx">
+      <div className="popular_post_Data_pd rowx">
         <PopularPost />
       </div>
       <div className="explore_bg">

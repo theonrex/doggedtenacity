@@ -408,7 +408,7 @@ article {
   margin-top: 22px;
 }
 .popular {
-  padding: 0 20px 20px;
+  padding: 0 20px 15px;
   font-size: 2.5em;
   text-transform: uppercase;
 }
@@ -438,6 +438,11 @@ article {
   color: $lightblue;
   text-decoration: underline;
   // margin: 0.8em 0;
+}
+
+.popularPost_Link {
+  border-radius: 9px;
+    box-shadow: -1px 3px 23px 0px rgb(43 0 255 / 15%);
 }
 
 @media screen and (max-width: 1204px) {
@@ -716,13 +721,19 @@ footer {
   border-radius: 10px;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
-  padding: 50px;
+  padding: 40px;
   font-size: 20px;
 }
 //popular
 .popular_post_Data{
       padding-top: 55px;
     width: 100%;
+}
+.popular_post_Data_pd{
+      width: 100%;
+            padding-top: 0px;
+
+
 }
 .popularPost_img img{
   width: 90%;
@@ -895,9 +906,10 @@ a {
   float: left;
 }
 .items_section {
-  padding: 0 8px;
+  padding: 0 9px;
 }
 .items_section h3 {
+  font-size: 1.3em;
   margin-bottom: 0;
 }
 .items_section h4 {
@@ -979,7 +991,11 @@ a {
     font-size: 2em;
     padding: 10px 0;
   }
-
+ .singlePost-body {
+    width: 100%;
+    margin: auto;
+    font-size: 1.3em;
+  }
   .author-img img {
     width: 50px;
   }
@@ -987,14 +1003,38 @@ a {
     float: left;
     padding: 0 1em;
   }
+ .items_section h4 {
+  font-size: 0.8em;
+}
 }
 @media screen and (max-width: 500px) {
   .post-Title {
     font-size: 2em;
     padding: 10px 0;
   }
+ .author_img img {
+    width: 50px;
 }
-@media screen and (max-width: 350px) {
+   .singlePost-body {
+    width: 100%;
+    margin: auto;
+    font-size: 1em;
+  }
+   .author_div{
+  display: flex;
+    align-items: center;  }
+  .items_section h3{
+    font-size: 1.9em;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  .singlePost-body {
+    
+    font-size: 0.6em;
+
+  }}
+  @media screen and (max-width: 350px) {
   .post-Title {
     font-size: 1.5em;
     padding: 10px 0;
@@ -1017,7 +1057,7 @@ a {
   .singlePost-body {
     padding-top: 32px;
     text-align: left;
-    font-size: 0.7em;
+    font-size: 0.4em;
     line-height: 1.6em;
   }
   .post-Title {
@@ -1040,10 +1080,7 @@ a {
     font-size: 1.5em;
     text-transform: capitalize;
   }
-  .singlePost-body {
-    width: 80%;
-    margin: auto;
-  }
+ 
 }
 
 @media screen and (max-width: 400px) {
@@ -1051,10 +1088,7 @@ a {
     font-size: 1.2em;
     text-transform: capitalize;
   }
-  .singlePost-body {
-    width: 100%;
-    margin: auto;
-  }
+ 
 }
 
 

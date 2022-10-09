@@ -37,7 +37,6 @@ const Popular = () => {
 
   return (
     <div className="popularPost_main ">
-      <header>Recent Post</header>
       {popular &&
         popular.map((popularPost, index) => (
           <div className="popularPost_Link col50">
