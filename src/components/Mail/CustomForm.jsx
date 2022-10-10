@@ -46,22 +46,22 @@ const CustomForm = ({ status, message, onValidated }) => {
         <div className="mc__field-container">
           <input
             placeholder="Your Email"
-            type="Email"
+            type="email"
             autocapitalize="off"
             autocorrect="off"
-            name="EMAIL"
-            id="EMAIL"
-            {...register("mail", {
+            name="MERGE0"
+            id="MERGE0"
+            {...register("MERGE0", {
               required: "Email Address is required",
             })}
           />
-          <p className="error">{errors.mail?.message}</p>
+          <p className="error">{errors.MERGE0?.message}</p>
         </div>
       ) : null}
 
       {/*Close button appears if form was successfully sent*/}
       {status === "success" ? (
-        "rex"
+        ""
       ) : (
         // <PrimaryCTAButton
         // 	handleClick={() => setModalOpen(false)}
