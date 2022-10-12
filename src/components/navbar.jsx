@@ -10,17 +10,27 @@ import "../static/css/Theme.css";
 //dark mode
 import DarkMode from "../components/darkmode";
 import { Link, useLocation } from "react-router-dom";
+import ReactGA from "react-ga"; //tracking website
 
 import useAnalyticsEventTracker from "../useAnalyticsEventTracker";
 
 
 function NavHead() {
+  //website tracker
 	const location = useLocation(); // once ready it returns the 'window.location' object
 	const [url, setUrl] = useState(null);
 	useEffect(() => {
 		setUrl(location.pathname);
 	}, [location]);
 	// ...
+
+  //website tracker
+
+  useEffect(() => {
+
+    ReactGA.pageview(window.location.pathname);
+  }, [])
+
 
 	  const gaEventTracker = useAnalyticsEventTracker("Tracker");
 
