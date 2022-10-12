@@ -17,12 +17,15 @@ import MailChimp from './components/Mail/mailchimp';
 // popular post
 import PopularCurrent from './components/PopularCurrent';
 import Popular from './components/popular';
+import ReactGA from "react-ga"; //tracking website
 
 //aos
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
 
+const TRACKING_ID = "G-V1N0LP5RCY"; // OUR_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 function App() {
   return (
       <Router>

@@ -11,6 +11,9 @@ import "../static/css/Theme.css";
 import DarkMode from "../components/darkmode";
 import { Link, useLocation } from "react-router-dom";
 
+import useAnalyticsEventTracker from "../useAnalyticsEventTracker";
+
+
 function NavHead() {
 	const location = useLocation(); // once ready it returns the 'window.location' object
 	const [url, setUrl] = useState(null);
@@ -18,72 +21,78 @@ function NavHead() {
 		setUrl(location.pathname);
 	}, [location]);
 	// ...
+
+	  const gaEventTracker = useAnalyticsEventTracker("Tracker");
+
 	return (
-		<div className="navbar-bg">
-			<>
-				{["xl"].map((expand) => (
-					<Navbar key={expand} expand={expand} className="mb-3 container">
-						<Container fluid>
-							<Navbar.Brand href="/">DOGGED TENACITY</Navbar.Brand>
-							<Navbar.Toggle
-								aria-controls={`offcanvasNavbar-expand-${expand}`}
-							/>
-							
-							<Navbar.Offcanvas
-								id={`offcanvasNavbar-expand-${expand}`}
-								aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-								placement="end"
-							>
-								
-								<Offcanvas.Header closeButton>
-									<Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-										DOGGED TENACITY
-									</Offcanvas.Title>
-								</Offcanvas.Header>
-								<Offcanvas.Body>
-									<Nav className="justify-content-end flex-grow-1 pe-3">
-										<Nav.Link
-											href="/"
-											className={"underline" + (url === "/" ? " active" : "")}
-										>
-											Home
-										</Nav.Link>
-										<Nav.Link
-											href="/post"
-											className={
-												"underline" + (url === "/post" ? " active" : "")
-											}
-										>
-											Blog
-										</Nav.Link>
-										<Nav.Link
-											href="/about"
-											className={
-												"underline" + (url === "/about" ? " active" : "")
-											}
-										>
-											About
-										</Nav.Link>
-										<Nav.Link
-											href="/contact"
-											className={
-												"underline" + (url === "/contact" ? " active" : "")
-											}
-										>
-											Contact
-										</Nav.Link>
-										<button className="dark_nav_btn">
-											<DarkMode />
-										</button>
-									</Nav>
-								</Offcanvas.Body>
-							</Navbar.Offcanvas>
-						</Container>
-					</Navbar>
-				))}
-			</>
-		</div>
-	);
+    <div className="navbar-bg">
+      <>
+        {["xl"].map((expand) => (
+          <Navbar key={expand} expand={expand} className="mb-3 container">
+            <Container fluid>
+              <Navbar.Brand href="/">DOGGED TENACITY</Navbar.Brand>
+              <Navbar.Toggle
+                aria-controls={`offcanvasNavbar-expand-${expand}`}
+              />
+
+              <Navbar.Offcanvas
+                id={`offcanvasNavbar-expand-${expand}`}
+                aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+                placement="end"
+              >
+                <Offcanvas.Header closeButton>
+                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                    DOGGED TENACITY
+                  </Offcanvas.Title>
+                </Offcanvas.Header>
+                <Offcanvas.Body>
+                  <Nav className="justify-content-end flex-grow-1 pe-3">
+                    <Nav.Link
+                      onClick={() => gaEventTracker("Home")}
+                      href="/"
+                      className={"underline" + (url === "/" ? " active" : "")}
+                    >
+                      Home
+                    </Nav.Link>
+                    <Nav.Link
+                      onClick={() => gaEventTracker("Blog")}
+                      href="/post"
+                      className={
+                        "underline" + (url === "/post" ? " active" : "")
+                      }
+                    >
+                      Blog
+                    </Nav.Link>
+                    <Nav.Link
+                      onClick={() => gaEventTracker("About")}
+                      href="/about"
+                      className={
+                        "underline" + (url === "/about" ? " active" : "")
+                      }
+                    >
+                      About
+                    </Nav.Link>
+                    <Nav.Link
+                      href="/contact"
+                      onClick={() => gaEventTracker("Contact")}
+                      className={
+                        "underline" + (url === "/contact" ? " active" : "")
+                      }
+                    >
+                      Contact
+                    </Nav.Link>
+                    <button className="dark_nav_btn">
+                      <DarkMode />
+                    </button>
+                  </Nav>
+                </Offcanvas.Body>
+              </Navbar.Offcanvas>
+            </Container>
+          </Navbar>
+        ))}
+      </>
+    </div>
+  );
 }
 
 export default NavHead;
