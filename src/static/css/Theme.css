@@ -2,6 +2,27 @@
     background-color: #f3efff !important;
 }
 
+.dark_float{
+    display: none;
+	position:fixed;
+	bottom:40px;
+	right:40px;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px rgb(176, 176, 176);
+  z-index:100;
+}
+
+.dark_float svg {
+    width: 1em;
+    height: 1em;
+}
+
+.my-float {
+	margin-top:16px;
+}
 
 .dark__mode,
 .dark__mode .recent_id{
@@ -242,6 +263,12 @@ input::selection {
 }
 
 @media screen and (max-width:1204px) {
+    .dark_float{
+        display: block;
+    }
+    .desktop_dark_btn{
+        display: none;
+    }
     
     .dark__mode .offcanvas-header {
             background-color: #1d082c !important;

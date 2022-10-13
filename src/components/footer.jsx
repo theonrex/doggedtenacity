@@ -1,9 +1,15 @@
 import React from "react";
 import NewsLettersubcribe from "./NewsLettersubcribe";
+import DarkMode from "../components/darkmode";
 
 function App() {
   return (
     <div className="">
+      <div className="dark_float">
+        <button className="dark_nav_btn my-float ">
+          <DarkMode />
+        </button>
+      </div>
       <div className="">
         <NewsLettersubcribe />
         {/* Footer  */}

@@ -91,7 +91,7 @@ function NavHead() {
                     >
                       Contact
                     </Nav.Link>
-                    <button className="dark_nav_btn">
+                    <button className="dark_nav_btn desktop_dark_btn">
                       <DarkMode />
                     </button>
                   </Nav>
